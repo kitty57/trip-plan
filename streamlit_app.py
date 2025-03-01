@@ -68,8 +68,7 @@ def setup_gemini_api():
     
     # If no API key in secrets, request it from user
     if not api_key:
-        api_key = st.text_input("Enter your Google Gemini API Key:", type="password", 
-                               help="Get your API key from https://makersuite.google.com/app/apikey")
+        api_key = "AIzaSyC8DAChYdFPif4RgQSYVkneoMHKDvnjgrw"
     
     if api_key:
         genai.configure(api_key=api_key)
